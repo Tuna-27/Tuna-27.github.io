@@ -1,0 +1,595 @@
+/*ここからCSS*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	max-width: 1500px;
+	border-right: 0.5px solid #EEEEEE;
+	border-left: 0.5px solid #EEEEEE;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-wide {
+    transform: scale(1.5, 1);
+}
+
+/*ここからヘッダー部分のCSS*/
+
+header {
+	width: 100%;
+	height: 105px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+    border: 0.5px solid #777777; 
+    border-right: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0px;
+    max-width: 1500px;
+}
+
+#header-container {
+	width: 80%;
+	height: 70px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+#header-text {
+	float: left;
+	width: 100px;
+	font-family: Starlights;
+	font-weight: 500;
+	line-height: 75px;
+	font-size: 65px;
+	margin: 0px 0px;
+	transition: all 0.5s;
+}
+
+#header-text:hover{
+	opacity: 0.4;
+	transform: scale(1.35,0.9);
+}
+
+.header-menu {
+	float: right;
+	display: inline-block;
+	font-size: 25px;
+	margin-top: 17.7px;
+	transition: all 0.5s;
+}
+
+.header-menu:hover {
+    cursor: pointer;
+    opacity: 0.4;
+    transform: scale(0.8,0.8);
+}
+
+
+/*ここまでヘッダー部分のCSS*/
+
+/*ここからメイン部分のCSS*/
+
+#main {
+    height: 100%;
+    background-image: url(background-space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#clicked-menu {
+    display: none;
+    width: 25%;
+    float: right;
+    height: 100px;
+    background-color: rgba(34,49,52,0.1);
+    position: fixed;
+    z-index: 99;
+    top: 104.5px;
+    left: 65%;
+}
+
+#clicked-menu ul {
+	padding-left: 0px;
+	text-align: center;
+	margin: 0px;
+	margin-top: 5px;
+}
+#clicked-menu li {
+	transition: all 0.5s;
+	font-family: "Cormorant Garamond";
+	line-height: 22px;
+}
+
+#clicked-menu li:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+.left {
+	float: left;
+}
+
+.right {
+    float: right;
+}
+
+.heading {
+	font-family: Starlights;
+	font-size: 100px;
+}
+
+#head {
+	width: 100%;
+	padding: 155px 20% 250px 20%;
+	overflow: hidden;
+	margin: 0;
+	z-index: 10;
+	background-color: white;
+}
+
+.section {
+	width: 100%;
+	z-index: 10;
+	background-color: white;
+	border-top: 0.7px solid #777777;
+}
+
+.section-title {
+	font-size: 60px;
+	font-family: "Cormorant Garamond";
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	background-color: white;
+}
+
+.section-contents {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#myImage {
+	float: left;
+}
+
+#myImage img{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+    transition: all 1s;
+}
+
+#myImage img:hover {
+	opacity: 0.8;
+	transform: scale(0.95,0.95);
+}
+
+#myText {
+	float: right;
+	display: inline-block;
+	padding-top: 30px;
+	width: 420px;
+	position: relative;
+}
+
+.name {
+	position: absolute;
+	top: 0;
+	font-family: Starlights;
+	display: inline-block;
+	height: 75px;
+	line-height: 70px;
+	transform: scale(2.4, 1.1);
+    margin: 0px;            /* デフォルトCSS打ち消し */
+    font-size:  50px;       /* 文字サイズ指定 */
+    font-weight:  normal;   /* 文字の太さ調整 */
+    margin-bottom: 15px;    /* 周りの余白指定 */
+    border-bottom: solid 4px rgba(76, 175, 80, 0.6);        /* 線指定 */
+    border-radius: 0px 0px 160px 180px/0px 0px 20px 4px;    /* 角丸指定 */
+}
+
+#introduction {
+	font-family: "Cormorant Garamond";
+	margin-top: 100px;
+	line-height: 80px;
+	font-size: 40px;
+}
+
+.sorry-message {
+	font-family: "Cormorant Garamond";
+	width: 100%;
+	text-align: center;
+	font-size: 35px;
+}
+
+#Abillity {
+    border-top: 0.7px solid #777777;
+}
+
+#skills-wrapper {
+	display: flex;
+	height: 100%;
+	padding-top: 30px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#variable {
+	height: 1000px;
+	border-radius: 30px;
+}
+
+.skill {
+    flex: auto;
+    text-align: center;
+    width: 33.3%;
+    transition: all 1s;
+}
+
+.skill:hover {
+	box-shadow: 0px 0px 0px 30px rgba(0,0,0,0.3);
+}
+
+.object {
+	font-size: 100px;
+	transition: all 1s;
+}
+
+.object:hover {
+	transform: scale(0.9,0.9);
+	opacity: 0.7;
+}
+
+.object-text {
+	font-size: 50px;
+	font-family: "851H-kktt";
+	color: white;
+	transition: all 1s;
+}
+
+.object-text:hover {
+	transform: scale(0.9,0.9);
+}
+
+.fa-html5 {
+    color: skyblue;
+}
+
+.fa-css3-alt {
+    color: orange;
+}
+
+.fa-js-square {
+    color: green;
+}
+
+#NextWill {
+	padding-bottom: 0;
+}
+
+#ToDo {
+	padding: 50px 0 50px 0;
+	margin: 0;
+	text-align: center;
+	font-family: "Cormorant Garamond";
+	font-size: 50px;
+	z-index: 0;
+}
+
+#ToDo li {
+	margin: 50px auto 0 auto;
+	width: 65%;
+	border-radius: 10px;
+}
+
+#Ruby {
+	padding: 0.25em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+}
+
+#Python {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+}
+
+#PHP {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+}
+
+#Rub {
+	color: rgba(255,0,0,0.8);
+}
+
+.fa-python {
+	color: skyblue;
+	transition: all 1s;
+}
+
+.fa-python:hover {
+    transform: scale(0.8,0.8);
+}
+
+.fa-php {
+	color: purple;
+	transition: all 1s;
+}
+
+.fa-php:hover {
+    transform: scale(0.8,0.8);
+}
+
+/*ここまでメイン部分のCSS*/
+
+/*ここからフッター部分のCSS*/
+
+footer {
+	padding-top: 30px;
+    border-top: 1px dashed #66FF33;
+    padding-bottom: 15px;
+}
+
+#footer-contents {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#thankyou {
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+	font-family: "851H-kktt";
+	margin: 0;
+}
+
+.fa-twitter {
+	color: #33CCFF;
+	font-size: 37.5px;
+	transition: all 1s;
+}
+
+.fa-twitter:hover {
+	transform: scale(0.85,0.85);
+	opacity: 0.7;
+}
+
+/*ここまでフッター部分のCSS*/
+
+
+
+
+
+/*ここからタブレット用のCSS*/
+
+@media (max-width: 1200px){
+	.name {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 1000px){
+
+    #clicked-menu {
+        width: 30%;
+        left: 60%;
+    }
+
+    #clicked-menu li {
+    	font-size: 18px;
+    	line-height: 24px;
+    }
+
+    #header-text {
+    	font-size: 60px;
+    }
+
+    .heading {
+    	font-size: 80px;
+    }
+
+    .name {
+    	left: 70px;
+    }
+
+    #myImage img{
+    	width: 290px;
+    	height: 290px;
+    }
+
+    #myText {
+    	width: 300px;
+    }
+
+    .dust {
+    	display: none;
+    }
+
+    .sorry-message {
+    	font-size: 30px;
+    }
+
+    #variable {
+    	height: 850px;
+    }
+
+    .object {
+    	font-size: 80px;
+    }
+
+    .object-text {
+    	font-size: 40px;
+    }
+
+    .skill:hover {
+	    box-shadow: 0px 0px 0px 30px rgba(0,0,0,0.3);
+    }
+
+    #ToDo li {
+    	width: 90%;
+    }
+
+    #ToDo {
+    	font-size: 40px;
+    }
+
+    #thankyou {
+	font-size: 22.5px;
+	line-height: 45px;
+    }
+
+    .fa-twitter {
+    	font-size: 30px;
+    }
+
+}
+
+/*ここまでタブレット用のCSS*/
+
+
+
+/*ここからモバイル用のCSS*/
+
+@media (max-width: 670px){
+
+    #clicked-menu {
+        width: 50%;
+        left: 50%;
+        height: 95px;
+    }
+
+    #clicked-menu li {
+    	font-size: 15px;
+    	line-height: 22px;
+    }
+
+    #header-text {
+    	font-size: 55px;
+    }
+
+    .heading {
+    	font-size: 60px;
+    }
+
+    .section-contents {
+    	text-align: center;
+    }
+
+    .section-title {
+    	font-size: 40px;
+    }
+    #myImage {
+    	width: 100%;
+    	text-align: center;
+    }
+
+    #myImage img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #myText {
+    	float: none;
+    	width: 80%;
+    	margin: 0 auto;
+    }
+
+    .name {
+    	left: 30px;
+    	width: 150px;
+    	font-size: 40px;
+    	text-align: center;
+    }
+    
+    .sorry-message {
+    	font-size: 20px;
+    }
+
+    #introduction {
+    	font-size: 30px;
+    }
+
+    #variable {
+    	height: 550px;
+    }
+
+    .skill {
+    	height: 100px;
+    }
+
+    .skill:hover {
+	    box-shadow: 0px 0px 0px 25px rgba(0,0,0,0.3);
+    }
+
+    .object {
+    	font-size: 50px;
+    }
+
+    .object-text {
+    	font-size: 20px;
+    }
+
+    .JavaScript {
+    	margin-top: 22.5px;
+    	font-size: 15px;
+    }
+
+    #ToDo li {
+    	width: 100%;
+    }
+
+    #ToDo {
+    	font-size: 30px;
+    }
+
+    #Ruby {
+    border-left: solid 2.5px #7db4e6;/*左線*/
+    }
+
+    #Python {
+        border-left: solid 2.5px #7db4e6;/*左線*/
+    }
+
+    #PHP {
+        border-left: solid 2.5px #7db4e6;/*左線*/
+    }
+
+    #thankyou {
+	    font-size: 15px;
+	    line-height: 30px;
+    }
+
+    .fa-twitter {
+    	font-size: 22.5px;
+    }
+
+}
+
+@media (max-width: 250px){
+    .name {
+        transform: scale(1.5, 1);
+        border-bottom: solid 2px rgba(76, 175, 80, 0.6);
+    }
+}
+/*ここまでモバイル用のCSS*/
