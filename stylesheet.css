@@ -18,9 +18,7 @@ ul {
   list-style: none;
 }
 
-.text-wide {
-    transform: scale(1.5, 1);
-}
+
 
 /*ここからヘッダー部分のCSS*/
 
@@ -198,7 +196,7 @@ header {
 	display: inline-block;
 	height: 75px;
 	line-height: 70px;
-	transform: scale(2.4, 1.1);
+	
     margin: 0px;            /* デフォルトCSS打ち消し */
     font-size:  50px;       /* 文字サイズ指定 */
     font-weight:  normal;   /* 文字の太さ調整 */
@@ -588,7 +586,6 @@ footer {
 
 @media (max-width: 250px){
     .name {
-        transform: scale(1.5, 1);
         border-bottom: solid 2px rgba(76, 175, 80, 0.6);
     }
 }
